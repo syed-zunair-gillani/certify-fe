@@ -16,17 +16,22 @@ import { usePathname } from 'next/navigation'
 
 const HeaderNav = ({
   header,
-}: Pick<formattedLayoutDataProps, 'header'>): JSX.Element => {
-   const path:any = usePathname()
-   if (path.startsWith('/landing-pages/')) return;
+}: Pick<formattedLayoutDataProps, 'header'>): JSX.Element | null => {
+  const path: any = usePathname()
 
+  // ✅ Hooks must be called unconditionally
   const [isMenuOpen, setIsMenuOpenOpen] = useState(false)
   const [isBannerClosed, setIsBannerClosed] = useState(
-    Cookies.get('bannerClose') === 'true',
+    Cookies.get('bannerClose') === 'true'
   )
+
+  // ✅ Early return AFTER hooks
+  if (path.startsWith('/landing-pages/')) return null
+
   const headerClasses = classNames(styles.header, {
     [styles['header-menu-open-mb']]: isMenuOpen,
   })
+
   const toggleMenu = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault()
     setIsMenuOpenOpen(!isMenuOpen)
