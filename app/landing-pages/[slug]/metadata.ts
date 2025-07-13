@@ -1,6 +1,6 @@
 import { getLandingPageFromCache } from '@/services/landingPage'
 import generateMetadataByPage from '@/action/generateMetadataByPage'
-import data from './data'
+import data from '@/app/home/data'
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const page = await getLandingPageFromCache(params.slug)
