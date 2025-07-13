@@ -1,19 +1,16 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-
 import Menu from './Menu'
 import Business from './Business'
-
 import styles from './styles.module.css'
-import { type formattedLayoutDataProps } from '@/services/layout'
 import { usePathname } from 'next/navigation'
 
 const FooterNav = ({
   footer,
-}: Pick<formattedLayoutDataProps, 'footer'>): JSX.Element => {
-  const path:any = usePathname()
-  if (path.startsWith('/landing-pages/')) return;
+}) => {
+  const path = usePathname()
+  if (path.startsWith('/landing-pages/')) return null
 
   return (
     <footer

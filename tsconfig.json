@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts", 
     "app/api/v1/posts/route.ts",
-  "types/**/*.d.ts"],
+  "types/**/*.d.ts", "components/Layout/FooterNav/index.jsx"],
   "exclude": [
     "node_modules"
   ]
