@@ -1,0 +1,124 @@
+@import '../../../styles/breakpoint.css';
+
+.header {
+  font-weight: 400;
+  text-align: center;
+}
+
+.body {
+  text-align: center;
+}
+
+.image {
+  margin: 0 auto;
+}
+
+.images-container-item-title {
+  text-align: center;
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.images-container-item-description {
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section {
+    padding: 4rem 2.5rem;
+  }
+
+  .header {
+    max-width: 56.25rem;
+    font-size: 3rem;
+    line-height: 3.5625rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .body {
+    max-width: 37.875rem;
+    margin: 1.5rem auto 3.625rem;
+  }
+
+  .images-container {
+    display: grid;
+  }
+
+  .images-container-sub {
+    margin-top: 1.5rem;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 1.25rem;
+  }
+
+  .images-container-item {
+    margin: 0 auto;
+    width: 18.75rem;
+    height: 9.375rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .header {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .body {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .image {
+    width: 46px;
+    height: 46px;
+  }
+
+  .images-container {
+    margin-top: 2.5rem;
+    display: flex;
+  }
+
+  .images-container-sub {
+    display: grid;
+  }
+
+  .images-container-item {
+    width: 10.313rem;
+    height: 8.375rem;
+    margin-bottom: 2rem;
+  }
+
+  .images-container-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .images-container-item-title {
+    margin-top: 1rem;
+    font-size: 0.813rem;
+  }
+
+  .images-container-item-description {
+    margin-top: 0;
+    font-size: 0.813rem;
+    max-width: 8rem;
+    margin: auto;
+  }
+}

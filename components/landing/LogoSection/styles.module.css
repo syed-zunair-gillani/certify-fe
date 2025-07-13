@@ -1,0 +1,7 @@
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}

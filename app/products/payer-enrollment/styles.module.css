@@ -1,0 +1,43 @@
+@import '../../../styles/breakpoint.css';
+
+.hero-container {
+  color: var(--color-charcoal) !important;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .hero-container .hero-title {
+    max-width: 41.9375rem;
+  }
+
+  .hero-container .image {
+    max-width: 12rem;
+    height: auto;
+  }
+
+  .banner-module-title {
+    max-width: 50.5625rem;
+  }
+
+  .banner-module-description {
+    max-width: 47.5rem;
+  }
+
+  .hero-container .description {
+    max-width: 34.8125rem;
+  }
+
+  .banner-module2-title {
+    max-width: 61.8125rem;
+  }
+
+  .transform-section-container {
+    max-width: 42.25rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .hero-container .image {
+    max-width: 8rem;
+    height: auto;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/breakpoint.css';
+
+.page-title {
+  display: flex;
+  padding: 7.5rem 2.5rem;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: var(--color-yellow-tint-2);
+}
+
+.page-title h1 {
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: normal;
+}
+
+.article-box {
+  padding: 4rem 2.5rem;
+}
+
+
+
+@media (max-width: $breakpoint-md-min) {
+  .page-title {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .page-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .article-box{
+    padding: 3.5rem 1.5rem;
+  }
+}

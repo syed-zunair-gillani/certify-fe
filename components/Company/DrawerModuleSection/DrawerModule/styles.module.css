@@ -1,0 +1,35 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  border-top: 0.0625rem solid var(--color-charcoal-tint);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.container:last-child {
+  border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.drawer-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    font-size: 1.125rem;
+  }
+
+  .arrow {
+    top: 2.125rem;
+  }
+}

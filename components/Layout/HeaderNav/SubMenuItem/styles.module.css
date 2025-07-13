@@ -1,0 +1,131 @@
+@import '../../../../styles/breakpoint.css';
+
+.link {
+  color: var(--color-charcoal);
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    position: relative;
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .hover-container {
+    margin-right: 0.5rem;
+  }
+
+  .sub-menu-title-text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .sub-menu-title-icon {
+    width: 14.8125rem;
+    height: 100%;
+    background-color: var(--color-white);
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sub-menu-content-icon {
+    width: 100%;
+    height: 7.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .is-hover {
+    position: relative;
+  }
+
+  .is-hover::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 0.5rem);
+    top: 0;
+    left: -0.5rem;
+    background-color: var(--color-white);
+    border-radius: 0.25rem 0 0.25rem;
+    z-index: 1;
+  }
+
+  .title {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .sub-menu-content {
+    position: absolute;
+    top: -1.1875rem;
+    left: 13.4375rem;
+    background-color: var(--color-white);
+    width: 14.8125rem;
+    height: 13.75rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+
+  .icon-mb {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .sub-menu-title-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .has-icon-mb {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--color-white);
+    border-radius: 0.25rem;
+    height: 3.875rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .link {
+    display: block;
+    margin-bottom: 0.6875rem;
+  }
+
+  .link:last-child {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .icon-mb {
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-menu-content-icon {
+    background-color: unset !important;
+  }
+}

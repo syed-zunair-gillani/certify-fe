@@ -1,0 +1,31 @@
+@import '../../../styles/breakpoint.css';
+
+.hero-container {
+  color: var(--color-charcoal) !important;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .hero-container .hero-title {
+    max-width: 51.25rem;
+  }
+
+  .banner-module-title {
+    max-width: 50.5625rem;
+  }
+
+  .hero-container .image {
+    max-width: 9rem;
+    height: auto;
+  }
+
+  .hero-container .description {
+    max-width: 34.8125rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .hero-container .image {
+    max-width: 8rem;
+    height: auto;
+  }
+}

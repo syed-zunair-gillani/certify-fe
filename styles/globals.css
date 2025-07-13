@@ -1,0 +1,231 @@
+@import './breakpoint.css';
+@import './fonts.css';
+
+:root {
+  --color-gray: #f4f4f4;
+  --color-purple: #857f95;
+  --color-purple-2: #79709d;
+  --color-purple-tint: #c9bee9;
+  --color-purple-tint-2: #d9d5f7;
+  --color-purple-tint-3: #e2dff7;
+  --color-white: #ffffff;
+  --color-orange: #df8b3b;
+  --color-orange-2: #e5974d;
+  --color-charcoal: #040610;
+  --color-charcoal-tint: rgba(4, 6, 16, 0.5);
+  --color-charcoal-tint2: rgba(4, 6, 16, 0.05);
+  --color-yellow: #f3c948;
+  --color-yellow-tint: #ffec88;
+  --color-yellow-tint-2: #fff38b;
+  --color-red: #ef6b51;
+  --color-blue: #337ab7;
+  --color-black: #000000;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Remove default padding */
+ul,
+ol,
+dl,
+dd,
+nav,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+.my-6 img{
+      max-width: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body,
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'IvarText-Regular';
+  color: var(--color-charcoal);
+  background-color: var(--color-gray);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+.styles_image__i9V_j {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: top center;
+}
+@media(max-width:767px){
+  .styles_item__Zz_zE h3 {
+    font-size: 1.4rem !important;
+}
+}
+
+.top-bar {
+    background-color: #FFF38B;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+   position: relative;
+}
+.topbar-close {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.topbar-close:hover {
+  color: #cccccc;
+}
+@media (max-width: 600px) {
+  .top-bar {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+.banner_wrapper{
+  background-color: #e9e6ff;
+  padding: 80px 0;
+}
+.banner_wrapper section{
+  max-width: 920px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.banner_wrapper section h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.banner_wrapper section p{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner_wrapper section #stateSearch{
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 999px;
+    background: url(https://knowledgebase.certifyos.com/hubfs/Certify%20Content%20Library/Group.svg) no-repeat 30px;
+    padding-left: 66px;
+    background-size: 20px;
+    height: 83px;
+    background-color: #FFFFFF;
+}
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.alphabet .button {
+  border: none;
+  background-color: transparent;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  line-height: 17px;
+  font-size: 20px;
+  font-family: 'ABCDiatype';
+  color: #000;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  padding: 3px 0 0;
+  justify-content: center;
+}
+.alphabet .button:hover{
+  background-color: #fff !important;
+}

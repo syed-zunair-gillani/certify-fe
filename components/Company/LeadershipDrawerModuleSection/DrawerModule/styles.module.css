@@ -1,0 +1,125 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  border-top: 0.0625rem solid var(--color-charcoal-tint);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container:last-child {
+  border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.container-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-child>div {
+  flex: 1;
+  align-items: center;
+}
+
+.container-child p+p {
+  margin-top: .875rem;
+}
+
+.leader-name {
+  width: 50%
+}
+
+.container-body {
+  width: 35%;
+  position: relative;
+}
+
+.body {
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  width: 2.25rem;
+  height: 1.125rem;
+  cursor: pointer;
+}
+
+.container-avatar {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-media-icon {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    font-size: 1.5rem;
+  }
+
+  .body {
+    max-width: 24.5625rem;
+  }
+
+  .social-media-icons {
+    margin-top: 3.875rem;
+  }
+
+  .title {
+    font-family: IvarText-Regular;
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  .container-detail {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    font-size: 1.125rem;
+  }
+
+  .container-child {
+    display: block;
+  }
+
+  .arrow {
+    top: 2.125rem;
+  }
+
+  .container-avatar {
+    margin-top: 0.5rem;
+  }
+
+  .container-body {
+    margin-top: 2rem;
+    width: 95%;
+  }
+
+  .social-media-icons {
+    margin-top: 1.5rem;
+  }
+}

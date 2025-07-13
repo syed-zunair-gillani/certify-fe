@@ -1,0 +1,33 @@
+.footer {
+  background-image: linear-gradient(rgba(121, 112, 158, 1), rgba(121, 112, 158, 1)) !important;
+    background-position: left top !important;
+    background-size: auto !important;
+    background-repeat: no-repeat !important;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+    margin-top: 60px;
+}
+.f_wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerText {
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+.footerRichText p {
+  margin: 0.5em 0;
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  gap: 1rem;
+}

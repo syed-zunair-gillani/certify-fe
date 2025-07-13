@@ -1,0 +1,97 @@
+@import '../../../../styles/breakpoint.css';
+
+.content-title {
+  font-weight: 500;
+  font-family: 'ABC-Diatype';
+  text-transform: uppercase;
+}
+
+.content .content-title {
+  border-radius: 0.375rem;
+  margin: 0 auto;
+  padding: 0.3125rem 1.5rem;
+}
+
+.content-body {
+  margin-top: 1rem;
+}
+
+.content:nth-of-type(2) .content-title {
+  background-color: #e5974d;
+}
+
+.content:nth-of-type(3) .content-title {
+  background-color: var(--color-yellow);
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .content-container {
+    margin-bottom: 12.125rem;
+  }
+
+  .content {
+    position: absolute;
+    text-align: center;
+  }
+
+  .content .content-title {
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3125rem 1.5rem;
+  }
+
+  .content:nth-of-type(1) {
+    left: 0;
+    top: 5rem;
+  }
+
+  .content:nth-of-type(1) .content-title {
+    background-color: var(--color-white);
+  }
+
+  .content:nth-of-type(1) .content-body {
+    width: 15.625rem;
+  }
+
+  .content:nth-of-type(2) {
+    top: 5rem;
+    right: 0;
+  }
+
+  .content:nth-of-type(2) .content-body {
+    width: 16.75rem;
+  }
+
+  .content:nth-of-type(3) {
+    top: 24.6875rem;
+    left: 25.4375rem;
+  }
+
+  .content:nth-of-type(3) .content-body {
+    width: 14.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .content-container {
+    max-width: 17.5rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .content:first-of-type {
+    margin-top: 0;
+  }
+
+  .content:nth-of-type(1) .content-title {
+    background-color: var(--color-yellow-tint-2);
+  }
+}

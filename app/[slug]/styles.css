@@ -1,0 +1,15 @@
+@import '../../styles//breakpoint.css';
+
+body {
+  background-color: var(--color-white) !important;
+}
+
+body > footer {
+  margin-top: 4rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section-container {
+    margin-top: 4rem;
+  }
+}

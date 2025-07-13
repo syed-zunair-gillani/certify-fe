@@ -1,0 +1,50 @@
+@import '../../../styles/breakpoint.css';
+
+.title {
+  font-family: 'ABC-Diatype';
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  font-weight: 500;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 0.875rem;
+  }
+
+  .body {
+    margin-top: 0.5rem;
+    max-width: 22.5rem;
+  }
+
+  .btn {
+    height: 2.3125rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    margin-bottom: 3.5rem;
+  }
+
+  .title {
+    font-size: 0.8125rem;
+  }
+
+  .body {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    display: none;
+  }
+}

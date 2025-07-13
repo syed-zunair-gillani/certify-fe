@@ -1,0 +1,110 @@
+@import '../../styles/breakpoint.css';
+
+.transform-section {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  padding: 4rem 2.5rem;
+  gap: 3.5rem;
+}
+
+.section-image {
+  overflow: hidden;
+  max-width: 27.375rem;
+}
+
+.form-container {
+  position: relative;
+  max-width: 42rem;
+}
+
+.form {
+  height: 100%;
+}
+
+.form-text {
+  color: var(--color-charcoal);
+}
+
+.form-title,
+.form-text h2 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 2.5rem;
+}
+.form-text em {
+  font-family: IvarText-Italic;
+}
+
+.form-body {
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  margin-bottom: 2.5rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.col {
+  flex: 1;
+  height: 100%;
+}
+
+.button {
+  width: 13.3125rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .transform-section {
+    padding: 3.5rem 2.25rem 3.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .col {
+    flex: 0 0 100%;
+  }
+
+  .form-container,
+  .section-image {
+    max-width: 100%;
+  }
+
+  .form-title,
+  .form-text h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-image {
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+}

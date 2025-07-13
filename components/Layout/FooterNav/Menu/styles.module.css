@@ -1,0 +1,9 @@
+@import '../../../../styles/breakpoint.css';
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}

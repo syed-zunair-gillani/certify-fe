@@ -1,0 +1,11 @@
+@import '../../styles/breakpoint.css';
+
+#banner {
+  display: block !important;
+}
+
+@media (max-width: $breakpoint-md-min) {
+  #has-banner-main-container {
+    padding-top: 8.5625rem;
+  }
+}

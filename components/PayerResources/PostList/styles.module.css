@@ -1,0 +1,137 @@
+@import '../../../styles/breakpoint.css';
+
+.published-at {
+  font-size: 0.875rem;
+  font-family: 'ABC-Diatype';
+  margin-top: 0.6875rem;
+}
+
+.itemContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  display: block;
+  border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.item {
+  position: relative;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.link:hover + .itemContainer .left-container .title {
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+.item:first-child .itemContainer {
+  border-top: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.portable-text {
+  height: 2.5rem;
+  overflow: hidden !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  line-height: 1.1875rem;
+  font-family: 'ABC-Diatype';
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  height: 2.375rem;
+  white-space: break-spaces;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .title-box {
+    display: flex;
+    height: 3.625rem;
+    align-items: center;
+  }
+
+  .title {
+    max-width: 40.625rem;
+    max-height: 3.625rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 1.6rem;
+    line-height: 1.8125rem;
+  }
+
+  .left-container {
+    max-width: 45.125rem;
+    flex: 1;
+  }
+
+  .right-container {
+    width: 27.375rem;
+    margin-right: 7.3125rem;
+  }
+
+  .itemContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.25rem;
+  }
+
+  .desktop-tag {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  .mobile-tag {
+    display: none;
+  }
+
+  .icon {
+    top: 3.625rem;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .postList {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .title {
+    max-width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .published-at {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .desktop-tag {
+    display: none;
+  }
+
+  .mobile-tag {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+
+  .icon {
+    top: 5.875rem;
+  }
+}

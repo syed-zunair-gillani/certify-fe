@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'IvarText-Italic';
+  src: url('/fonts/IvarText-Italic.woff2') format('woff2');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'IvarText-Regular';
+  src: url('/fonts/IvarText-Regular.woff2') format('woff2');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'IvarText-SemiBold';
+  src: url('/fonts/IvarText-SemiBold.woff2') format('woff2');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'ABC-Diatype';
+  src: url('/fonts/ABCDiatype-Regular.woff2') format('woff2');
+  font-display: block;
+}
+
+@mixin heading {
+  font-family: IvarText-Regular;
+  letter-spacing: 0;
+}
+
+@mixin subheading {
+  font-family: IvarText-Regular;
+  letter-spacing: 0;
+}
+
+@mixin sansBody {
+  font-family: ABC-Diatype;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+.heading-1 {
+  @include heading;
+  line-height: 120%;
+  font-size: 1.75rem;
+}
+
+.heading-1-italic {
+  @include heading;
+  line-height: 120%;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-family: IvarText-Italic;
+}
+
+.heading-2 {
+  @include heading;
+  line-height: 120%;
+  font-size: 1.5rem;
+}
+
+.heading-2-italic {
+  @include heading;
+  line-height: 120%;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+.heading-2-normal {
+  @include heading;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.subheading {
+  @include subheading;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+.subheading-italic {
+  @include subheading;
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 120%;
+  font-family: 'IvarText-Italic';
+}
+
+.serif-body {
+  font-family: IvarText-Regular;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 124%;
+}
+
+.sans-body-normal {
+  @include sansBody;
+  font-size: 0.875rem;
+}
+
+.sans-body-big {
+  @include sansBody;
+  font-size: 1rem;
+}
+
+.sans-body-small {
+  @include sansBody;
+  font-size: 0.875rem;
+}
+
+.eyebrow {
+  font-family: ABC-Diatype;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.italic {
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .heading-1 {
+    line-height: 110%;
+    font-size: 4rem;
+  }
+
+  .heading-1-italic {
+    line-height: 110%;
+    font-size: 4rem;
+    font-style: italic;
+  }
+
+  .heading-2 {
+    line-height: 110%;
+    font-size: 3rem;
+  }
+
+  .heading-2-italic {
+    line-height: 110%;
+    font-size: 3rem;
+    font-style: italic;
+  }
+
+  .heading-2-normal {
+    font-size: 3rem;
+    line-height: 3.5625rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    line-height: 124%;
+  }
+
+  .subheading-italic {
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 124%;
+  }
+
+  .serif-body {
+    font-size: 1.125rem;
+    line-height: 124%;
+  }
+
+  .sans-body-big {
+    font-size: 1.125rem;
+  }
+
+  .sans-body-small {
+    font-size: 0.875rem;
+  }
+
+  .sans-body-normal {
+    font-size: 1rem;
+  }
+
+  .eyebrow {
+    font-size: 0.875rem;
+    line-height: 140%;
+    letter-spacing: 1%;
+  }
+}

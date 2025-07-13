@@ -1,0 +1,56 @@
+/* Container for entire landing page */
+.landingPage {
+    background-color: #f5edff;
+    padding: 40px 20px;
+  }
+  
+  /* Logos section */
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Banner text heading */
+  .bannerText {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  /* Centered content wrapper */
+  .contentContainer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Optional: style for accordion heading */
+  .accordionHeading {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* Optional: style for accordion body */
+  .accordionBody {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Footer rich text style */
+  .footerRichText :global(p) {
+    margin-bottom: 10px;
+  }
+  

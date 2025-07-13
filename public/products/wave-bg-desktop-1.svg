@@ -1,0 +1,50 @@
+ <svg
+    width="1359"
+    height="486"
+    viewBox="0 0 1359 486"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0_169_6247)">
+      <g clip-path="url(#clip1_169_6247)">
+        <path
+          d="M2.24512 262.319C87.8343 227.936 193.864 253.364 254.548 322.82C275.802 347.145 291.67 375.91 314.011 399.238C336.352 422.567 368.288 440.552 399.974 434.311C448.524 424.75 478.442 363.228 527.897 364.789C559.002 365.776 585.593 392.782 616.648 390.79C648.965 388.715 672.51 356.108 704.627 351.991C748.472 346.373 780.017 393.993 822.052 407.662C865.697 421.854 913.36 396.334 943.627 361.834C973.894 327.335 992.683 284.337 1020.05 247.488C1095.41 146.015 1239.4 101.797 1358.73 143.483"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          id="curve-path"
+        >
+          <animate
+            attributeName="stroke-dasharray"
+            from="0 3018"
+            to="3018 0"
+            dur="3s"
+            begin="0s"
+            fill="freeze"
+          />
+          <animate
+            attributeName="stroke-dashoffset"
+            from="1359"
+            to="0"
+            dur="3s"
+            begin="0s"
+            fill="freeze"
+          />
+        </path>
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_169_6247">
+        <rect width="1359" height="486" fill="white" />
+      </clipPath>
+      <clipPath id="clip1_169_6247">
+        <rect
+          width="1358.97"
+          height="342.257"
+          fill="white"
+          transform="translate(1 101)"
+        />
+      </clipPath>
+    </defs>
+</svg>

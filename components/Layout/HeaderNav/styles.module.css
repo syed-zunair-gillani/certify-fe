@@ -1,0 +1,111 @@
+@import '../../../styles/breakpoint.css';
+
+.header {
+  background-color: var(--color-gray);
+  z-index: 10;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.banner-container {
+  background-color: var(--color-white);
+  padding: 0.75rem 2.25rem;
+  position: relative;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.icon {
+  position: absolute;
+  cursor: pointer;
+  right: 2.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .banner-container {
+    text-align: center;
+  }
+
+  .navbar {
+    height: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    max-width: 90rem;
+  }
+
+  .right-container {
+    display: flex;
+  }
+
+  .close-icon {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) and (max-width: 1170px) {
+  .right-container {
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .icon {
+    right: 1.5rem;
+  }
+
+  .navbar {
+    position: relative;
+    padding: 1rem 1.5rem;
+  }
+
+  .header-menu-open-mb {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .logo {
+    width: 10.125rem;
+    height: 2.0625rem;
+  }
+
+  .close-icon {
+    background-color: var(--color-yellow);
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+  }
+
+  .menu-open-mb {
+    display: none;
+  }
+
+  .right-container {
+    padding-bottom: 7rem;
+  }
+}

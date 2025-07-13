@@ -1,0 +1,75 @@
+@import '../../../styles/breakpoint.css';
+
+.visual-only-module-section .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .hero-section-image {
+    justify-content: center;
+  }
+
+  .hero-section-image .image {
+    width: 24.25rem !important;
+    height: 25.25rem !important;
+  }
+
+  .pie-chart-module-container .content-container {
+    margin-bottom: 14.625rem;
+  }
+
+  .pie-chart-module-container .content:nth-of-type(1) .content-body,
+  .pie-chart-module-container .content:nth-of-type(2) .content-body {
+    width: 17rem;
+  }
+
+  .pie-chart-module-container .content:nth-of-type(3) .content-body {
+    width: 16.3125rem;
+  }
+
+  .bottom-container {
+    justify-content: space-around !important;
+  }
+
+  .large-open-drawer-module-section .header,
+  .large-open-drawer-module-section .header h2 {
+    max-width: 30.0625rem;
+  }
+
+  .large-open-drawer-module-section .italic {
+    display: block;
+  }
+
+  .visual-only-module-section .body {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .visual-only-module-section .button-container {
+    margin-top: 4.5rem;
+  }
+
+  .transform-section-container {
+    max-width: 49.1875rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .hero-section-image {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+
+  .hero-section-image .image {
+    max-width: 11.375rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .visual-only-module-section .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

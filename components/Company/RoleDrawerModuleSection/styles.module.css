@@ -1,0 +1,76 @@
+@import '../../../styles/breakpoint.css';
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+.header {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+.title-container {
+  padding-top: 5rem;
+  padding-left: 2.5rem;
+  background: var(--color-gray);
+}
+
+.title {
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-family: ABC-Diatype;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375;
+  letter-spacing: 0rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: space-between;
+  }
+
+  .right-container {
+    /* max-width: 41.875rem; */
+    flex: 1;
+  }
+
+  .header {
+    max-width: 28.9375rem;
+    font-size: 3rem;
+    line-height: 3.5625rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .title-container {
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .header {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}

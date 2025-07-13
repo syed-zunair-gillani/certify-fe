@@ -1,0 +1,25 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  color: var(--color-charcoal);
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    display: flex;
+    height: 100%;
+    margin-right: 10.375rem;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) and (max-width: 1170px) {
+  .container {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    margin-top: 3.5rem;
+  }
+}

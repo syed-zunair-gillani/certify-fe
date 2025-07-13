@@ -1,0 +1,43 @@
+/* lvarText Fonts */
+@font-face {
+  font-family: 'lvarText';
+  src: url('/fonts/lvarText-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lvarText';
+  src: url('/fonts/lvarText-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* ABCDiatype Fonts */
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('/fonts/ABCDiatype-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('/fonts/ABCDiatype-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('/fonts/ABCDiatype-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('/fonts/ABCDiatype-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}

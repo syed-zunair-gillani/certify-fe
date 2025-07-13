@@ -1,0 +1,54 @@
+@import '../styles/breakpoint.css';
+
+.hero-title {
+  color: var(--color-charcoal);
+  font-style: normal;
+  line-height: 120%;
+  margin-bottom: 2.625rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subContainer {
+    min-width: 55.875rem;
+  }
+
+  .hero-title h1 {
+    margin-bottom: 1.75rem !important;
+  }
+
+  .hero-form-container {
+    width: 37.875rem !important
+  }
+
+  .form-text {
+    position: absolute;
+    bottom: 8.125rem !important;
+    padding: 0 1.25rem 0 2.5rem !important;
+  }
+
+  .btn-classes {
+    padding: 0.875rem 1rem !important;
+  }
+
+  .hero-section-image {
+    width: 24.25rem !important;
+  }
+
+  .hero-section-image .image {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .hero-section-image .image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 11.375rem;
+  }
+}

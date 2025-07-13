@@ -1,0 +1,262 @@
+@import '../../styles/breakpoint.css';
+
+.container,
+.page-container {
+  padding: 3.5rem 1.46875rem;
+  position: relative;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.backButton {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  left: 2.5rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.headerPage {
+  max-width: 27.4375rem;
+}
+
+.tag {
+  margin-bottom: 2rem !important;
+}
+.tag .sans-body-small.tag{
+  padding:.25rem 1.8rem !important;
+}
+.title {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+  color:#040610;
+}
+
+.publishTime {
+  display: block;
+  margin-bottom: 2rem;
+  letter-spacing: 0.00875rem;
+  color:#040610;
+}
+
+.dek {
+  font-size: 1.125rem;
+  margin-bottom: 3.5rem;
+  color:#040610;
+}
+
+.image {
+  margin: 2.5rem auto;
+  width: 20.375rem;
+  height: 14.625rem;
+  position: relative;
+}
+
+.image img {
+  border-radius: 1.15rem;
+  width: 100% !important;
+  position: relative !important;
+  margin: 0 auto;
+  object-position:left;
+}
+.my-6 img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+}
+.body {
+  margin-top: 2.5rem;
+  text-align:center;
+}
+
+.body h1,
+.body h3,
+.body h4 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.body h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.body h1,
+.body h2 {
+  font-family: IvarText-Regular !important;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+.body h3 {
+  font-family: IvarText-Regular !important;
+  letter-spacing: 0;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+.body p {
+  font-family: ABC-Diatype;
+  letter-spacing: 0;
+  font-size: 0.875rem;
+  line-height: 1.225rem;
+}
+
+.body p + p {
+  margin-top: 0.625rem;
+}
+
+.body p + ul {
+  margin-top: 0.625rem;
+}
+
+.body ul + p {
+  margin-top: 0.625rem;
+}
+
+.body ul {
+  list-style: outside;
+  list-style-position: outside;
+  padding-left: 1.875rem;
+}
+
+.body ol {
+  list-style: auto;
+  list-style-position: outside;
+  padding-left: 3rem;
+}
+
+.body li::before {
+  content: '';
+}
+
+.body a {
+  color: var(--color-purple-2);
+}
+
+.body p,
+.body li {
+  margin: 1.5rem 0;
+  font-size: 1.25rem;
+  line-height: 140%;
+}
+.readMoreButton {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button {
+  background-color:#F3C948;
+  padding: 0.84rem 1.14rem;
+  font-weight: bold;
+  color: #040610 !important;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ddb141;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    padding-top: 0;
+  }
+
+  .hero-section {
+    padding-top: 3.5rem;
+    padding-bottom: 0rem;
+    background-color: transparent;
+    color: var(--color-white);
+  }
+
+  .backButton {
+    display: unset;
+  }
+
+  .hero-section .backButton path {
+    stroke: var(--color-white) !important;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .titlePage {
+    text-align: left;
+  }
+
+  .dek {
+    margin: 0 auto;
+    max-width: 32.2rem;
+    line-height: 140%;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .body {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    max-width: 25.8rem;
+  }
+
+  .image {
+          max-width: 26.3rem;
+         width:100%;
+        height: 32rem;
+  }
+
+  .publishTime {
+    font-size: 1.25rem;
+    line-height: 140%;
+    margin-bottom: 0;
+  }
+
+  .body h2 {
+    font-size: 2rem;
+    line-height: 140%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .body h3 {
+    font-size: 1.75rem;
+    line-height: 140%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .body h4 {
+    font-size: 1.5rem;
+    line-height: 140%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/** ONLY for custom page */
+
+.pageContainer h1 {
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .pageContainer h1 {
+    margin-bottom: 4rem;
+  }
+}

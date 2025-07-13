@@ -1,0 +1,81 @@
+@import '../../../styles/breakpoint.css';
+
+.history-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.section-image {
+  overflow: hidden;
+}
+
+.form-container {
+  position: relative;
+  padding: 3.5rem 1.5rem;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+}
+
+.form-text {
+  color: var(--color-charcoal);
+}
+
+.form-title {
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+  text-align: left;
+}
+
+.form-body {
+  font-family: ABC-Diatype;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0rem;
+}
+
+.form-body p {
+  margin-top: 1.5rem;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+}
+
+.col {
+  flex: 1;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .history-section {
+    min-height: 40.375rem;
+  }
+
+  .form-container {
+    padding: 4rem 2.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .col {
+    flex: 0 0 100%;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-body {
+    font-size: 0.875rem;
+  }
+}

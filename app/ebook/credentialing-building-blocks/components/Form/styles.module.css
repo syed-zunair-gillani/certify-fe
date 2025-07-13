@@ -1,0 +1,20 @@
+@import '../../../../../styles/breakpoint.css';
+
+.form {
+  font-family: 'ABC-Diatype';
+  min-height: 32.25rem;
+}
+
+@media (min-width: $breakpoint-lg-max) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .form {
+    max-width: 27.6875rem;
+    min-height: 34.4375rem;
+    margin: 0 auto;
+  }
+}

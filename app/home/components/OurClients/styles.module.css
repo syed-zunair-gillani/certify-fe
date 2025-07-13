@@ -1,0 +1,88 @@
+@import '../../../../styles/breakpoint.css';
+
+.our-clients-section {
+  padding: 4rem 3.125rem;
+}
+
+.our-clients-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  row-gap: 2rem;
+  column-gap: 4.5rem;
+  padding: 1.625rem 0;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 27.3rem;
+  height: 10.3rem;
+  background-color: #f3c948;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 3.8rem;
+  line-height: 1;
+  font-weight:700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.body {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-family: ABC-Diatype;
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .our-clients-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .our-clients-section h2 {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .list {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+  }
+
+  .item {
+    flex-direction: column;
+        min-width: 20.3rem;
+  }
+
+  .title {
+            font-size: 2.125rem;
+        line-height: 2.35rem;
+  }
+
+  .body {
+            font-size: 1.5rem;
+        line-height: 2.225rem;
+    text-align: center;
+  }
+}
+@media(max-width:575px){
+    .item {
+    flex-direction: column;
+    min-width: 18.3rem;
+  }
+}

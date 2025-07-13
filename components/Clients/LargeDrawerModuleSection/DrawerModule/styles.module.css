@@ -1,0 +1,62 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  border-top: 0.0625rem solid var(--color-charcoal-tint);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.container:last-child {
+  border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.container li {
+  list-style: inside;
+  font-size: 0.875rem !important;
+}
+
+.has-body-title {
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+}
+
+.body {
+  margin-top: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title,
+.body {
+  padding-right: 1.875rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    font-size: 1.5rem;
+  }
+
+  .question-body {
+    max-width: 25.375rem;
+  }
+
+  .title span,
+  .body {
+    max-width: 36.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    font-size: 1.125rem;
+  }
+}

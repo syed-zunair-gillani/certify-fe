@@ -1,0 +1,50 @@
+.tag {
+  color: var(--color-charcoal);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  border-radius: 0.375rem;
+  padding: 0.25rem 1.5rem;
+  text-transform: capitalize;
+}
+
+.orange {
+  background: var(--color-orange-2);
+  border: 1px solid var(--color-orange-2);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+}
+
+.yellow-t {
+  background-color: var(--color-yellow-tint-2);
+  border: 1px solid var(--color-yellow-tint-2);
+}
+
+.purple-t-01 {
+  background-color: var(--color-purple-tint);
+  border: 1px solid var(--color-purple-tint);
+}
+
+.purple-t-02 {
+  background-color: var(--color-purple-tint-2);
+  border: 1px solid var(--color-purple-tint-2);
+}
+
+.purple {
+  background-color: var(--color-purple-2);
+  border: 1px solid var(--color-purple-2);
+}
+
+.default {
+  background-color: none;
+  border: 1px solid var(--color-charcoal-tint);
+}
+
+.default:hover,
+.default:active {
+ background-color: var(--color-charcoal-tint2);
+}

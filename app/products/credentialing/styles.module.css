@@ -1,0 +1,27 @@
+@import '../../../styles/breakpoint.css';
+
+@media (min-width: $breakpoint-md-max) {
+  .drawer-module-title {
+    max-width: 27.4375rem !important;
+  }
+
+  .hero-container .title {
+    max-width: 42.125rem;
+  }
+
+  .hero-container .description {
+    max-width: 30.125rem;
+  }
+
+  .banner-module-title {
+    max-width: 50.5625rem;
+  }
+
+  .banner-module-description {
+    max-width: 43.125rem;
+  }
+
+  .transform-section-container {
+    max-width: 42.5rem;
+  }
+}

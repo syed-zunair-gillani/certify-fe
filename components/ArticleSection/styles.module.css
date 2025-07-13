@@ -1,0 +1,53 @@
+@import '../../styles//breakpoint.css';
+
+.article-section {
+  width: 100%;
+  padding: 4rem 2.5rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-charcoal);
+  font-size: 3rem;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .article-section {
+    padding: 3.5rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    line-height: 120%;
+  }
+
+  .section-title,
+  .mobile-btn {
+    padding: 0 1.5rem;
+  }
+
+  .card-list {
+    padding-left: 1.5rem;
+  }
+
+  .mobile-btn {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}

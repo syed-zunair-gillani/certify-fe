@@ -1,0 +1,21 @@
+@import '../../../styles/breakpoint.css';
+
+.italic {
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .visual-only-module-section .image {
+    margin-bottom: 2.125rem;
+  }
+
+  .transform-section-container {
+    max-width: 46.875rem !important;
+  }
+
+  .hero-section-image .image {
+    width: 613px !important;
+    height: 613px !important;
+  }
+}

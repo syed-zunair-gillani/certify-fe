@@ -1,0 +1,32 @@
+@import '../../../styles/breakpoint.css';
+
+.footer {
+  background-color: var(--color-purple-tint);
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .footer {
+    min-height: 23.8125rem;
+    padding: 4rem 2.5rem 2rem;
+    font-family: 'ABC-Diatype';
+  }
+
+  .container {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .footer {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+}

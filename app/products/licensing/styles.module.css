@@ -1,0 +1,38 @@
+@import '../../../styles/breakpoint.css';
+
+.banner-max-w {
+  margin-bottom: 0 !important;
+}
+
+.hero-title,
+.description {
+  color: var(--color-charcoal);
+}
+
+@media (min-width: $breakpoint-md-max) {
+
+  .hero-title,
+  .description {
+    max-width: 34.375rem;
+  }
+
+  .hero-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .max-w-dm {
+    max-width: 27.4375rem;
+  }
+
+  .banner-max-w {
+    max-width: 60.875rem;
+  }
+
+  .transform-image{
+    max-width: 20.875rem !important;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {}

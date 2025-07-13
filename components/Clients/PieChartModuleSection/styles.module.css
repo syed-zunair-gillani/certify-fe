@@ -1,0 +1,99 @@
+@import '../../../styles/breakpoint.css';
+
+.section {
+  background-color: var(--color-gray);
+}
+
+.header {
+  text-align: center;
+  font-weight: 400;
+}
+
+.pie-chart-module-container {
+  font-size: 0.875rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  .pie-chart-module-container {
+    width: 63.9375rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .image-container {
+    width: 19.625rem;
+    height: 19.625rem;
+    position: relative;
+    margin-left: 23.25rem;
+  }
+
+  .arrow-left {
+    width: 9.1875rem;
+    height: 2.375rem;
+    position: absolute;
+    left: -5.25rem;
+    top: 3.8125rem;
+    background-image: url('/clients/char-arrow-left.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .arrow-right {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    right: -4.375rem;
+    top: 0.625rem;
+    background-image: url('/clients/char-arrow-right.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .arrow-down {
+    width: 6.5rem;
+    height: 9.6875rem;
+    position: absolute;
+    left: 0.25rem;
+    top: 14rem;
+    background-image: url('/clients/char-arrow-down.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .header {
+    font-size: 1.75rem;
+    margin: 0 1.5rem 2rem;
+  }
+
+  .image-container {
+    margin: 0 5.25rem 2rem;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow-left,
+  .arrow-right,
+  .arrow-down {
+    display: none;
+  }
+}

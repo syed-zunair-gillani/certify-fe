@@ -1,0 +1,103 @@
+@import '../../styles/breakpoint.css';
+
+.hero-section {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.section-image {
+  overflow: hidden;
+}
+
+.form-container {
+  position: relative;
+}
+
+.form {
+  height: 100%;
+}
+
+.form-text {
+  padding: 0 2.5rem 3.5rem 2.5rem;
+  color: var(--color-white);
+}
+
+.form-text h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+.form-text em {
+  font-family: 'IvarText-Italic';
+}
+
+.form-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+.form-body {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.col {
+  height: 100%;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .hero-section {
+    height: 37.5rem;
+  }
+
+  .section-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .form-text {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .col {
+    flex: 0 0 100%;
+  }
+
+  .form-text {
+    padding: 2.5rem 2.25rem 2.5rem 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-body {
+    font-size: 0.875rem;
+  }
+}

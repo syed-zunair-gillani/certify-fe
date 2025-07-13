@@ -1,0 +1,70 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  font-size: 0.875rem;
+  color: var(--color-charcoal);
+}
+
+.menu-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'ABC-Diatype';
+}
+
+.link {
+  color: var(--color-charcoal);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    max-width: 13.125rem;
+    width: 100%;
+    margin-right: 1rem;
+  }
+
+  .container:last-child {
+    margin-right: 0;
+  }
+
+  .menu-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .sub-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .sub-title:last-child {
+    margin-bottom: 0;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    border-top: 0.0625rem solid var(--color-charcoal-tint);
+  }
+
+  .container:last-child {
+    border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+  }
+
+  .menu-title {
+    cursor: pointer;
+    font-size: 0.8125rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+  }
+
+  .sub-title {
+    margin-bottom: 1.5rem;
+  }
+}

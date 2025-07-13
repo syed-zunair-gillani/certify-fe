@@ -1,0 +1,71 @@
+@import '../../styles/breakpoint.css';
+
+.filters-and-sorts {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter h6 {
+  margin: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.tag {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.sort-select {
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+.select {
+  width: auto;
+  padding: 0.5rem 1.875rem 0.5rem 0.875rem;
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  line-height: 140%;
+  border-radius: 0.375rem;
+  outline: none;
+  background-color: var(--color-gray);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-charcoal-tint);
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 1rem;
+  right: 0.9375rem;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.select option {
+  min-width: 9.375rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .filter-select {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .filter-list {
+    display: none;
+  }
+
+  .filter h6 {
+    font-size: 0.8125rem;
+  }
+}

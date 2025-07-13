@@ -1,0 +1,55 @@
+@import '../../../styles/breakpoint.css';
+
+.section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.header {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+  font-family: 'IvarText-Italic';
+}
+
+.header h2 em {
+  font-family: 'IvarText-Italic';
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: space-between;
+  }
+
+  .right-container {
+    max-width: 41.875rem;
+    flex: 1;
+  }
+
+  .header h2 {
+    max-width: 29.8375rem;
+    font-size: 3rem;
+    line-height: 3.5625rem;
+  }
+
+  .header h2 em {
+    display: block;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}

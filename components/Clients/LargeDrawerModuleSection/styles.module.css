@@ -1,0 +1,87 @@
+@import '../../../styles/breakpoint.css';
+
+.section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.header,
+.header h2 {
+  font-weight: 400;
+}
+
+.header em {
+  font-family: 'IvarText-Italic';
+}
+
+.question-section .header,
+.question-section .header h2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.question-section .header em {
+  font-family: IvarText-Italic;
+}
+
+.question-section li {
+  font-size: 1rem;
+  font-family: ABC-Diatype;
+}
+
+.question-section :global(.sans-body-small) {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .right-container {
+    max-width: 41.875rem;
+    flex: 1;
+  }
+
+  .question-section .right-container {
+    width: 34.6875rem;
+    flex: unset;
+  }
+
+  .header,
+  .header h2 {
+    max-width: 28.9375rem;
+    font-size: 3rem;
+    line-height: 3.5625rem;
+  }
+
+  .question-section span,
+  .question-section :global(.sans-body-small) {
+    max-width: 27.25rem;
+    padding-right: 1.875rem;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header,
+  .header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .question-section .header,
+  .question-section .header h2 {
+    margin-bottom: 2.5rem;
+  }
+}

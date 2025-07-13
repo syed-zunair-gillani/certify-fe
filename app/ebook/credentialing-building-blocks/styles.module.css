@@ -1,0 +1,78 @@
+@import '../../../styles/breakpoint.css';
+
+.container {
+  background-color: var(--color-white);
+}
+
+.body {
+  font-family: 'ABC-Diatype';
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.title {
+  font-weight: 400;
+  text-align: center;
+}
+
+.img {
+  margin: 1.5rem auto auto auto;
+  height: auto;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  .img {
+    width: auto;
+    height: auto;
+    margin: 2.5rem auto auto auto;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .img {
+    width: 60%;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3.5625rem;
+  }
+
+  .body {
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: $breakpoint-lg-max) {
+  .form {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    padding: 3.5rem 1.5rem 7.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    line-height: 2.0625rem;
+  }
+
+  .body {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+  }
+}

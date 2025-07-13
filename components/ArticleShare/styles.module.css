@@ -1,0 +1,42 @@
+@import '../../styles/breakpoint.css';
+
+.container {
+  width: 100vw;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-black);
+  letter-spacing: .00875rem;
+  line-height: 140%;
+}
+
+.platforms {
+  display: flex;
+}
+
+.platforms a {
+  margin-right: 1.375rem;
+}
+
+.platforms a:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    position: absolute;
+    left: 0;
+    justify-content: center;
+  }
+
+  .label {
+    margin-right: 1.5rem;
+  }
+}

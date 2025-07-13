@@ -1,0 +1,47 @@
+@import '../../styles/breakpoint.css';
+
+.home-page {
+  position: relative;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  background-color: var(--color-gray);
+}
+
+.image {
+  height: auto;
+}
+
+.max-w-full {
+  max-width: 100% !important;
+}
+
+.change-width {
+  max-width: 38.75rem;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .section-image {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  .hero-section-image {
+    max-height: 31.25rem;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .home-page {
+    max-width: 100%;
+  }
+
+  .section-image {
+    padding: 3.125rem 1.5rem;
+  }
+
+  .provider {
+    width: 14.3125rem;
+  }
+}

@@ -1,0 +1,225 @@
+@import '../../../../styles/breakpoint.css';
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    position: relative;
+    height: 0;
+    padding-bottom: calc(490 / 1359 * 100%);
+    margin: 0 auto;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container.four-cards-container {
+    padding-bottom: calc(311 / 1359 * 100%);
+    margin-top: 10rem;
+  }
+
+  .container.five-cards-container {
+    padding-bottom: calc(316 / 1340 * 100%);
+    margin-top: 16.1875rem;
+  }
+
+  .container.visible {
+    background-image: url('/products/wave-bg-desktop-1.svg');
+  }
+
+  .container.four-cards-container.visible {
+    background-image: url('/products/wave-bg-desktop-2.svg');
+  }
+
+  .container.five-cards-container.visible {
+    background-image: url('/products/wave-bg-desktop-3.svg');
+  }
+
+  .item {
+    opacity: 0;
+    width: 24%;
+    transform: translateY(-1.25rem);
+    position: absolute;
+  }
+
+  .container.visible .item:nth-child(1) {
+    animation: fadeInDown-1 1s forwards 0.8s;
+    top: 15.6%;
+    left: 0;
+  }
+
+  .container.visible .item:nth-child(2) {
+    animation: fadeInDown-1 1s forwards 1.4s;
+    top: 30%;
+    left: 33%;
+  }
+
+  .container.visible .item:nth-child(3) {
+    animation: fadeInDown-1 1s forwards 1.8s;
+    top: -0.3%;
+    right: 9%;
+  }
+
+  .container.visible .item:nth-child(4) {
+    animation: fadeInDown-1 1s forwards 2.4s;
+  }
+
+  .container.visible .item:nth-child(5) {
+    animation: fadeInDown-1 1s forwards 2.8s;
+  }
+
+  .container.four-cards-container .item:nth-child(1) {
+    top: -28.5%;
+  }
+
+  .container.four-cards-container .item:nth-child(2) {
+    top: -13%;
+    left: 27%;
+  }
+
+  .container.four-cards-container .item:nth-child(3) {
+    top: 16%;
+    right: 21%;
+  }
+
+  .container.four-cards-container .item:nth-child(4) {
+    top: -30%;
+    right: 2%;
+  }
+
+  .container.five-cards-container .item:nth-child(1) {
+    top: 27%;
+  }
+
+  .container.five-cards-container .item:nth-child(2) {
+    top: -33%;
+    left: 16%;
+  }
+
+  .container.five-cards-container .item:nth-child(3) {
+    top: -68%;
+    right: 34%;
+  }
+
+  .container.five-cards-container .item:nth-child(4) {
+    top: -9%;
+    right: 15%;
+  }
+
+  .container.five-cards-container .item:nth-child(5) {
+    top: -57%;
+    right: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .item {
+    position: relative;
+    height: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(159 / 375 * 100%);
+  }
+
+  .container.visible .item:nth-child(1) {
+    background-image: url('/products/wave-bg-mobile-1.svg');
+    margin-top: 8.125rem;
+  }
+
+  .item .image {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    width: 20.375rem;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
+  .container.visible .item .image {
+    animation: fade-1 1s forwards 0.8s;
+  }
+
+  .item:nth-child(1) .image {
+    bottom: 18%;
+  }
+
+  .container.visible .item:nth-child(2) {
+    background-image: url('/products/wave-bg-mobile-2.svg');
+    margin-top: 12.5rem;
+  }
+
+  .item:nth-child(2) .image {
+    bottom: 25%;
+  }
+
+  .container.visible .item:nth-child(3) {
+    background-image: url('/products/wave-bg-mobile-3.svg');
+    margin-top: 12.5rem;
+  }
+
+  .item:nth-child(3) .image {
+    bottom: 20%;
+  }
+
+  .container.visible .item:nth-child(4) {
+    background-image: url('/products/wave-bg-mobile-1.svg');
+  }
+
+  .container.visible .item:nth-child(5) {
+    background-image: url('/products/wave-bg-mobile-2.svg');
+  }
+
+  .four-cards-container .item:nth-child(2) {
+    margin-top: 16.25rem;
+  }
+
+  .four-cards-container .item:nth-child(3) {
+    margin-top: 12.5rem;
+  }
+
+  .four-cards-container .item:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .four-cards-container .item:nth-child(4) .image {
+    bottom: 5%;
+  }
+
+  .five-cards-container .item:nth-child(1) {
+    margin-top: 10rem;
+  }
+
+  .five-cards-container .item:nth-child(4) {
+    margin-top: 12.5rem;
+  }
+
+  .five-cards-container .item:nth-child(4) .image {
+    bottom: 14%;
+  }
+
+  .five-cards-container .item:nth-child(5) {
+    margin-top: 21rem;
+  }
+
+  .five-cards-container .item:nth-child(5) .image {
+    bottom: 23%;
+  }
+}
+
+@keyframes fadeInDown-1 {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-1 {
+  to {
+    opacity: 1;
+  }
+}

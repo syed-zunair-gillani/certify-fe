@@ -1,0 +1,46 @@
+@import '../../../styles/breakpoint.css';
+
+.container {
+  padding: 4rem 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 400;
+  margin: 0.875rem 1rem;
+  font-size: 3rem;
+}
+
+.container h2 {
+  height: 3.3rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  margin: 0.875rem 1rem;
+  font-size: 3rem;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .container h2 {
+    height: 2.1rem;
+    line-height: 2.1rem;
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+  }
+}

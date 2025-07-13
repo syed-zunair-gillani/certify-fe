@@ -1,0 +1,114 @@
+@import '../../styles/breakpoint.css';
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial {
+  color: var(--color-charcoal);
+  text-align: center;
+  padding: 4rem;
+  height: 100%;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  max-width: 42rem;
+  gap: 2rem;
+}
+
+.content-body {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124%;
+  font-family: 'IvarText-Regular';
+  flex: auto;
+  display: flex;
+  align-items: center;
+}
+
+.content-foot {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.carousel :global(.slick-next),
+.carousel :global(.slick-prev) {
+  width: 1, 125rem;
+  height: 2.25rem;
+  z-index: 9;
+}
+
+.carousel :global(.slick-next) {
+  right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel :global(.slick-prev) {
+  left: 2.5rem;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel :global(.slick-track) {
+  display: flex;
+  align-items: stretch;
+}
+
+.carousel :global(.slick-slide) {
+  height: unset;
+}
+
+.carousel :global(.slick-slide > div) {
+  height: 100%;
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .testimonial {
+    /* height: 20.2rem; */
+    padding: 3.5rem 1.5rem;
+    height: 100%;
+  }
+
+  .testimonial-content {
+    gap: 3rem;
+  }
+
+  .content-body {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+
+  .content-foot {
+    max-width: 80%;
+  }
+
+  .content-foot .name {
+    display: block;
+  }
+
+  .content-foot .name span {
+    display: block;
+  }
+
+  .carousel :global(.slick-next),
+  .carousel :global(.slick-prev) {
+    top: auto;
+    bottom: 2.5rem;
+  }
+
+  .carousel :global(.slick-next) {
+    right: 1.5rem;
+  }
+
+  .carousel :global(.slick-prev) {
+    left: 1.5rem;
+  }
+}

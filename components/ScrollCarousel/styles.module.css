@@ -1,0 +1,21 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-content {
+  transition: transform 0.2s ease;
+}
+
+.image-box {
+  float: left;
+}
+
+.image-item {
+  display: flex;
+  align-items: center;
+  padding: 0 2.1875rem;
+  height: 5.125rem;
+  float: left;
+  position: relative;
+}

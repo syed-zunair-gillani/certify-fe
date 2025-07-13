@@ -1,0 +1,24 @@
+@import '../../../styles/breakpoint.css';
+
+.hero-title,
+.description {
+  color: var(--color-charcoal);
+}
+
+@media (min-width: $breakpoint-md-max) {
+
+  .hero-title,
+  .description {
+    max-width: 39.5rem;
+  }
+
+  .hero-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .large-drawer-header h2 {
+    font-size: 2.4375rem !important;
+  }
+}

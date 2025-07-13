@@ -1,0 +1,163 @@
+@import '../../../../styles/breakpoint.css';
+
+.container {
+  border-top: 0.0625rem solid var(--color-charcoal-tint);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.container:last-child {
+  border-bottom: 0.0625rem solid var(--color-charcoal-tint);
+}
+
+.container-child {
+  display: block;
+}
+
+.role-name-container {
+  width: 50%;
+}
+
+.role-name-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.625rem;
+  letter-spacing: 0rem;
+}
+
+.has-body-container .container-child:first-child {
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  top: 2.375rem;
+  width: 2.25rem;
+  height: 1.125rem;
+  pointer-events: none;
+}
+
+.container-role {
+  margin-bottom: 1rem;
+}
+
+.container-role-detail {
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.role-detail-primary-text-container {
+  width: 35rem;
+  /* height: 1.875rem; */
+}
+
+.role-detail-secondary-text-container {
+  /* width: 23.688rem; */
+  height: 1.25rem;
+  display: flex;
+}
+
+.role-detail-secondary-text-container-single {
+  width: 13.844rem;
+}
+
+.role-detail-secondary-text-container-mobile {
+  display: none;
+}
+
+.role-detail-secondary-text {
+  margin-top: 0.5rem;
+  font-family: ABC-Diatype;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  width: 2.35rem;
+  height: 2rem;
+  border: 0.125rem;
+  cursor: pointer;
+}
+
+.arrow-right-mobile {
+  display: none;
+}
+
+@media (min-width: $breakpoint-md-max) {
+  .container {
+    font-size: 1.5rem;
+  }
+
+  .container-role:first-child {
+    margin-top: 3.5rem;
+  }
+
+  .role-detail-secondary-text {
+    margin-right: 12.5rem;
+  }
+
+  .role-detail-secondary-text-container {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .role-detail-secondary-text-container-single {
+    width: auto;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .container {
+    font-size: 1.125rem;
+  }
+
+  .container-child {
+    display: block;
+  }
+
+  .arrow {
+    top: 2.125rem;
+  }
+
+  .container-role-detail {
+    padding: 1rem 1rem;
+    display: block;
+    width: 80%;
+  }
+
+  .role-detail-primary-text-container {
+    display: flex;
+    width: 135%;
+    justify-content: space-between;
+  }
+
+  .role-detail-secondary-text-container-single {
+    display: none;
+  }
+
+  .role-detail-secondary-text-container-mobile {
+    display: flex;
+  }
+
+  .arrow-right {
+    display: none;
+  }
+
+  .arrow-right-mobile {
+    display: flex;
+    width: 2.35rem;
+    height: 1rem;
+    border: 0.125rem;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}

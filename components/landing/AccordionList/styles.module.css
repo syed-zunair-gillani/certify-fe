@@ -1,0 +1,66 @@
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.accordion {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  list-style: none;
+  outline: none;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  font-family: 'lvarText';
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+.accordion summary span {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+/* Rotate the icon when accordion is open */
+.accordion[open] summary span {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0px 28px;
+  padding-bottom: 22px;
+}
+
+.accordionContent h1, .accordionContent h2, .accordionContent h3, .accordionContent h4, .accordionContent h5, .accordionContent h6{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.accordionContent p{
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.noResults {
+  text-align: center;
+  color: #666;
+  margin: 2rem 0;
+}

@@ -1,0 +1,14 @@
+@import '../../styles/breakpoint.css';
+
+@media (min-width: $breakpoint-md-max) {
+  .main-container {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint-md-min) {
+  .main-container {
+    padding-top: 4.125rem;
+  }
+}
