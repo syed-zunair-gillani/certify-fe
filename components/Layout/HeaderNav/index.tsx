@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import Cookies from 'js-cookie'
 import dayjs from 'dayjs'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 import Icon from '@/components/Icon'
 import Menu from './Menu'
@@ -12,30 +13,16 @@ import Account from './Account'
 
 import styles from './styles.module.css'
 import { type formattedLayoutDataProps } from '@/services/layout'
-import { usePathname } from 'next/navigation'
 
 const HeaderNav = ({
   header,
 }: Pick<formattedLayoutDataProps, 'header'>): JSX.Element | null => {
-  const path: any = usePathname()
+  const path = usePathname()
 
-  // ✅ Hooks must be called unconditionally
   const [isMenuOpen, setIsMenuOpenOpen] = useState(false)
   const [isBannerClosed, setIsBannerClosed] = useState(
     Cookies.get('bannerClose') === 'true'
   )
-
-  // ✅ Early return AFTER hooks
-  if (path.startsWith('/landing-pages/')) return null
-
-  const headerClasses = classNames(styles.header, {
-    [styles['header-menu-open-mb']]: isMenuOpen,
-  })
-
-  const toggleMenu = (e: React.MouseEvent<HTMLAnchorElement>): void => {
-    e.preventDefault()
-    setIsMenuOpenOpen(!isMenuOpen)
-  }
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -50,15 +37,13 @@ const HeaderNav = ({
     if (isBannerClosed && mainElement != null) {
       mainElement.removeAttribute('id')
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [isBannerClosed])
 
   const handleCloseIconClick = (): void => {
     const mainElement = document.getElementById('has-banner-main-container')
     if (mainElement != null) {
       mainElement.removeAttribute('id')
     }
-
     Cookies.set('bannerClose', 'true')
     setIsBannerClosed(true)
   }
@@ -84,6 +69,14 @@ const HeaderNav = ({
     )
   }
 
+  // Early exit from render output (NOT from the function itself)
+  const shouldHideHeader = path?.startsWith('/landing-pages/')
+  if (shouldHideHeader) return null
+
+  const headerClasses = classNames(styles.header, {
+    [styles['header-menu-open-mb']]: isMenuOpen,
+  })
+
   const menuAriaLabel = isMenuOpen ? 'close menu' : 'open menu'
   const getBannerDisplayTime = dayjs().isBefore('2024-04-25')
 
@@ -106,7 +99,10 @@ const HeaderNav = ({
         <a
           className={styles['close-icon']}
           href="#"
-          onClick={toggleMenu}
+          onClick={(e) => {
+            e.preventDefault()
+            setIsMenuOpenOpen(!isMenuOpen)
+          }}
           aria-label={menuAriaLabel}
         >
           {isMenuOpen ? <Icon name="Close" /> : <Icon name="Menu" />}
